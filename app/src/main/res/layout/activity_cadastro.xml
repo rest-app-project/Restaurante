@@ -1,0 +1,185 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fundo_gradiente_padrao"
+        tools:context=".LoginActivity">
+
+        <ImageView
+            android:id="@+id/imageViewLogoCadastroUsuario"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editNomeCadastroUsuario"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/fundo_gradiente_branco"
+            android:drawableLeft="@drawable/ic_person_24"
+            android:ems="10"
+            android:hint="  nome usuário"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:textColor="#000000"
+            android:textColorHint="#9E9B9B"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCadastrese" />
+
+        <EditText
+            android:id="@+id/editEmailCadastroUsuario"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/fundo_gradiente_branco"
+            android:drawableLeft="@drawable/ic_email_login_24"
+            android:ems="10"
+            android:hint="  email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="15dp"
+            android:textColor="#000000"
+            android:textColorHint="#9E9B9B"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editNomeCadastroUsuario" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout4"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/fundo_gradiente_branco"
+            android:paddingTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/editEmailCadastroUsuario"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editEmailCadastroUsuario"
+            app:layout_constraintTop_toBottomOf="@+id/editEmailCadastroUsuario"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/senhaCadastroUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_cadeado_login_24"
+                android:hint="  Senha loja"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout443"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/fundo_gradiente_branco"
+            android:paddingTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/editEmailCadastroUsuario"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editEmailCadastroUsuario"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/repetirSenhaCadastroUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_cadeado_login_24"
+                android:hint="  Confirmar senha"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonCadastrarUsuario"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="504dp"
+            android:background="@drawable/border_custom_branco"
+            android:text="Cadastrar"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/textView103"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout443"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout443"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout443"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="80dp"
+            android:src="@drawable/image_entrar"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonCadastrarUsuario"
+            app:layout_constraintStart_toStartOf="@+id/buttonCadastrarUsuario"
+            app:layout_constraintTop_toTopOf="@+id/buttonCadastrarUsuario" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.42" />
+
+        <TextView
+            android:id="@+id/textView103"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Desenvolvido por ConySoft"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewCadastrese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Cadastre um colaborador"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewLogoCadastroUsuario" />
+
+        <ProgressBar
+            android:id="@+id/progressBarCadastroUsuario"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonCadastrarUsuario" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

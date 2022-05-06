@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Restaurante" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#0A2B96</item>
+        <item name="colorPrimaryVariant">#0A2B96</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/purple_700</item>
+        <item name="colorSecondaryVariant">#9C27B0</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <!-- Tema criado sem a ActionBar para splash -->
+    <style name="MyTheme" parent="@style/Theme.AppCompat.Light.NoActionBar" >
+        <item name="colorPrimaryDark">#0A32B5</item>
+        <item name="colorPrimary">#0A2B96</item>
+        <item name="colorAccent">#EC2266</item>
+    </style>
+
+
+</resources>
